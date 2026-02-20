@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_wart_block"
+    },
+    "title": "Love in hell",
+    "description": "Breed any 2 animals in the nether.",
+    "frame": "challenge",
+    "hidden": false
+  },
+  "parent": "advs:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        },
+        "parent": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        },
+        "partner": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        },
+        "child": {
+          "location": {
+            "dimension": "minecraft:the_nether"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}
