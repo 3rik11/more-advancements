@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:magma_block"
+    },
+    "title": "Ow my Feet!",
+    "description": "Walk on a Magma Block",
+    "frame": "task",
+    "hidden": false
+  },
+  "parent": "advs:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "blocks": "minecraft:magma_block"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

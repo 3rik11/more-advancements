@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": "You touched Grass!",
+    "description": "Touch Grass.",
+    "frame": "task",
+    "hidden": false
+  },
+  "parent": "advs:root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "stepping_on": {
+            "block": {
+              "blocks": "minecraft:grass_block"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}
